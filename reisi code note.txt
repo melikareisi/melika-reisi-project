@@ -1,0 +1,68 @@
+c#
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace jam_e_do_adad
+{
+    class Program
+    {
+        public static void Main()
+        {
+            Console.WriteLine("Adad Aval Ra Vared Konid :");
+            string Input_1 = Console.ReadLine();
+            Console.WriteLine("Adad Dovom Ra Vared Konid :");
+            string Input_2 = Console.ReadLine();
+
+            int num1 = Convert.ToInt32(Input_1);
+            int num2 = Convert.ToInt32(Input_2);
+            int sum = num1 + num2;
+
+            Console.WriteLine("Jam'e do adad =");
+            Console.WriteLine(sum);
+        }
+    }
+}
+
+
+c++ 1
+#include <iostream>
+using namespace std;
+int main(){
+ const int ROWS = 3;
+const int COLS = 3;
+int arr[ROWS][COLS];
+
+for (int j = 0; j < COLS; j++) {
+    for (int i = 0; i < ROWS; i++) {
+        cin >> arr[i][j];
+    }
+}
+
+for (int i = 0; i < ROWS; i++) {
+    for (int j = 0; j < COLS; j++) {
+        cout << arr[i][j] << " ";
+    }
+    cout << endl;
+}
+}
+c++ 2
+#include <iostream>
+using namespace std;
+int main(){
+  float arr[3][3];
+  float det;
+  cout << "9 adad baraye araye vared konid :" << endl;
+  for(int i=0; i<3; i++) {
+    for(int j=0; j<3; j++) {
+      cin >> arr[i][j];
+    }
+  }
+
+  det = arr[0][0]*(arr[1][1]*arr[2][2]-arr[2][1]*arr[1][2])-arr[0][1]*(arr[1][0]*arr[2][2]-arr[2][0]*arr[1][2])+arr[0][2]*(arr[1][0]*arr[2][1]-arr[2][0]*arr[1][1]);
+  cout << "Determinal araye : " << det << endl;
+
+  return 0;
+}
